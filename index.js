@@ -34,8 +34,8 @@ client.on("warn", console.warn);
 
 client.on("message", async (message) => {
     if (!message.guild || message.author.bot) return;
-    // Handle XP
-    xp(message);
+    
+    
     // command handler
     if (!message.content.startsWith(client.config.prefix)) return;
     let args = message.content.slice(client.config.prefix.length).trim().split(" ");
